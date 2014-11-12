@@ -8,6 +8,10 @@
 Spree.config do |config|
   config.logo = "logo.png"
   # config.track_inventory_levels = false
+  config.use_s3 = true
+  config.s3_bucket = "locoloja"
+  config.s3_access_key = "AKIAJ4WRBVUMLKC7TE2A"
+  config.s3_secret = "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"
 end
 
 Spree.user_class = "Spree::User"
