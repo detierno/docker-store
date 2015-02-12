@@ -17,6 +17,7 @@ gem 'spring',        group: :development
 gem 'foreman'
 gem 'unicorn'
 gem 'newrelic_rpm'
+gem 'raygun4ruby'
 #gem "airbrake"
 
 group :production do
