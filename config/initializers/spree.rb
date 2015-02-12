@@ -7,6 +7,7 @@
 # config.setting_name = 'new value'
 Spree.config do |config|
   config.logo = "logo.png"
+  config.admin_interface_logo = "logo.png"
   # config.track_inventory_levels = false
 end
 
