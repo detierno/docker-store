@@ -18,7 +18,7 @@ gem 'foreman'
 gem 'unicorn'
 gem 'newrelic_rpm'
 gem 'raygun4ruby'
-#gem "airbrake"
+gem 'pivotal-tracker'
 
 group :production do
   gem 'rails_12factor'
