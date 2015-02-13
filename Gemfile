@@ -18,7 +18,9 @@ gem 'foreman'
 gem 'unicorn'
 gem 'newrelic_rpm'
 gem 'raygun4ruby'
+
 gem 'pivotal-tracker'
+gem 'tracker-git'
 
 group :production do
   gem 'rails_12factor'

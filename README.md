@@ -7,9 +7,9 @@ Locoloja
 
 Porque loja é o que há.
 
-# Instalação
+## Instalação
 
-```ruby
+```bash
   bundle install
   rake db:create && rake db:migrate
 ```
@@ -47,10 +47,10 @@ escaneie as estórias marcadas nos commit e marque as mesmas como
 entregues.
 
 ```bash
-     bundle exec tracker $TRACKER_PROJECT $TRACKER_TOKEN --label ci-deployment
+   bundle exec tracker $TRACKER_PROJECT $TRACKER_TOKEN --label ci-deployment
 ```
 
-# Testando
+## Testando
 
 Para rodar todos os testes basta usar
 
@@ -64,7 +64,7 @@ Para rodar os testes de integração
 
     rake test:integration
 
-# Direitos
+## Direitos
 
 Todos os direitos reservados. Desenvolvido por [Locomotiva.pro](http://locomotiva.pro)
 
