@@ -8,6 +8,7 @@ pt-BR:
         country: País
         firstname: Nome
         lastname: Sobrenome
+        neighborhood: Bairro
         phone: Telefone
         state: Estado
         zipcode: CEP
@@ -791,6 +792,7 @@ pt-BR:
     name: Nome
     name_on_card:
     name_or_sku: Nome ou SKU (insira pelo menos 4 caracteres do nome do produto)
+    neighborhood: Bairro
     new: Novo
     new_adjustment: Novo Ajuste
     new_country: Novo país
