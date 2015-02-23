@@ -18,6 +18,4 @@ private
     !personal_account?
   end
 
-
-
 end

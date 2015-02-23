@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150213124552) do
+ActiveRecord::Schema.define(version: 20150220135529) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -277,6 +277,7 @@ ActiveRecord::Schema.define(version: 20150213124552) do
     t.integer  "state_lock_version",                                         default: 0,       null: false
     t.integer  "invoice_number"
     t.date     "invoice_date"
+    t.text     "preferences"
   end
 
   add_index "spree_orders", ["approver_id"], name: "index_spree_orders_on_approver_id", using: :btree
