@@ -1315,6 +1315,9 @@ pt-BR:
     transaction_id:
     transfer_from_location: Transferir de
     transfer_stock: Transferência de Estoque
+    returns: Autor. de Devoluções
+    customer_returns: Devoluções
+    state_changes: Histórico de mudanças
     transfer_to_location: Transferir para
     tree: "Árvore"
     type: Tipo
