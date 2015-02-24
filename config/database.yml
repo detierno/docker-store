@@ -16,4 +16,3 @@ test:
   username: denisantoniazzi
   password:
   host: /var/pgsql_socket
-

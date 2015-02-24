@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20150224134830) do
     t.integer  "country_id"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+    t.string   "neighborhood"
   end
 
   add_index "spree_addresses", ["country_id"], name: "index_spree_addresses_on_country_id", using: :btree
@@ -277,6 +278,7 @@ ActiveRecord::Schema.define(version: 20150224134830) do
     t.integer  "state_lock_version",                                         default: 0,       null: false
     t.integer  "invoice_number"
     t.date     "invoice_date"
+    t.text     "preferences"
   end
 
   add_index "spree_orders", ["approver_id"], name: "index_spree_orders_on_approver_id", using: :btree
@@ -990,6 +992,11 @@ ActiveRecord::Schema.define(version: 20150224134830) do
     t.string   "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
+    t.string   "cpf"
+    t.string   "company_name"
+    t.string   "cnpj"
+    t.string   "state_registry"
+    t.string   "account_type"
   end
 
   add_index "spree_users", ["deleted_at"], name: "index_spree_users_on_deleted_at", using: :btree
