@@ -24,7 +24,7 @@ gem 'tracker-git'
 
 group :production do
   gem 'rails_12factor'
-  gem 'aws-sdk'
+  gem 'aws-sdk', '~> 1.61.0'
 end
 
 group :development, :test do
