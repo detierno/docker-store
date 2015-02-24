@@ -1,0 +1,19 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: lojalapagos_development
+  pool: 5
+  username: denisantoniazzi
+  password:
+  host: /var/pgsql_socket
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: lojalapagos_test
+  pool: 5
+  username: denisantoniazzi
+  password:
+  host: /var/pgsql_socket
+

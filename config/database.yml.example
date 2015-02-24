@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: locoloja_development
+  pool: 5
+  username: locoworks
+  password:
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: locoloja_test
+  pool: 5
+  username: locoworks
+  password:
+
