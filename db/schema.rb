@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150212181664) do
+ActiveRecord::Schema.define(version: 20150224134830) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -798,6 +798,7 @@ ActiveRecord::Schema.define(version: 20150212181664) do
   add_index "spree_stock_items", ["deleted_at"], name: "index_spree_stock_items_on_deleted_at", using: :btree
   add_index "spree_stock_items", ["stock_location_id", "variant_id"], name: "stock_item_by_loc_and_var_id", using: :btree
   add_index "spree_stock_items", ["stock_location_id"], name: "index_spree_stock_items_on_stock_location_id", using: :btree
+  add_index "spree_stock_items", ["variant_id"], name: "index_spree_stock_items_on_variant_id", using: :btree
 
   create_table "spree_stock_locations", force: :cascade do |t|
     t.string   "name"
