@@ -47,6 +47,7 @@ end
 gem "codeclimate-test-reporter", group: :test, require: nil
 
 
+gem 'aws-sdk'
 gem 'spree', github: 'spree/spree', branch: '3-0-stable'
 #gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => 'master'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '3-0-stable'
