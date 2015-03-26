@@ -1,18 +1,16 @@
-development:
+default: &default
   adapter: postgresql
   encoding: unicode
-  database: lojalapagos_development
   pool: 5
-  username: denisantoniazzi
+  host: <%= ENV['GALAPAGOS_DB_1_PORT_5432_TCP_ADDR'] %>
+  port: <%= ENV['GALAPAGOS_DB_1_PORT_5432_TCP_PORT'] %>
+  username: postgres
   password:
-  host: /var/pgsql_socket
 
+development:
+  <<: *default
+  database: galapagos_development
 
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: lojalapagos_test
-  pool: 5
-  username: denisantoniazzi
-  password:
-  host: /var/pgsql_socket
+  <<: *default
+  database: galapagos_test

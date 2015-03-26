@@ -20,5 +20,4 @@
 /tmp
 /public/spree/*
 .DS_Store
-/config/database.yml
 .env
