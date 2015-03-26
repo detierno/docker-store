@@ -276,8 +276,6 @@ ActiveRecord::Schema.define(version: 20150224134830) do
     t.integer  "canceler_id"
     t.integer  "store_id"
     t.integer  "state_lock_version",                                         default: 0,       null: false
-    t.integer  "invoice_number"
-    t.date     "invoice_date"
     t.text     "preferences"
   end
 
@@ -300,37 +298,6 @@ ActiveRecord::Schema.define(version: 20150224134830) do
   end
 
   add_index "spree_orders_promotions", ["order_id", "promotion_id"], name: "index_spree_orders_promotions_on_order_id_and_promotion_id", using: :btree
-
-  create_table "spree_pages", force: :cascade do |t|
-    t.string   "title"
-    t.text     "body"
-    t.string   "slug"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "show_in_header",           default: false, null: false
-    t.boolean  "show_in_footer",           default: false, null: false
-    t.string   "foreign_link"
-    t.integer  "position",                 default: 1,     null: false
-    t.boolean  "visible",                  default: true
-    t.string   "meta_keywords"
-    t.string   "meta_description"
-    t.string   "layout"
-    t.boolean  "show_in_sidebar",          default: false, null: false
-    t.string   "meta_title"
-    t.boolean  "render_layout_as_partial", default: false
-  end
-
-  add_index "spree_pages", ["slug"], name: "index_spree_pages_on_slug", using: :btree
-
-  create_table "spree_pages_stores", id: false, force: :cascade do |t|
-    t.integer  "store_id"
-    t.integer  "page_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "spree_pages_stores", ["page_id"], name: "index_spree_pages_stores_on_page_id", using: :btree
-  add_index "spree_pages_stores", ["store_id"], name: "index_spree_pages_stores_on_store_id", using: :btree
 
   create_table "spree_payment_capture_events", force: :cascade do |t|
     t.decimal  "amount",     precision: 10, scale: 2, default: 0.0
@@ -602,26 +569,6 @@ ActiveRecord::Schema.define(version: 20150224134830) do
 
   add_index "spree_reimbursements", ["customer_return_id"], name: "index_spree_reimbursements_on_customer_return_id", using: :btree
   add_index "spree_reimbursements", ["order_id"], name: "index_spree_reimbursements_on_order_id", using: :btree
-
-  create_table "spree_relation_types", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.string   "applies_to"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "spree_relations", force: :cascade do |t|
-    t.integer  "relation_type_id"
-    t.integer  "relatable_id"
-    t.string   "relatable_type"
-    t.integer  "related_to_id"
-    t.string   "related_to_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.decimal  "discount_amount",  precision: 8, scale: 2, default: 0.0
-    t.integer  "position"
-  end
 
   create_table "spree_return_authorization_reasons", force: :cascade do |t|
     t.string   "name"
