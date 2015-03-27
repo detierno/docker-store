@@ -47,10 +47,9 @@ group :development, :test do
 end
 gem "codeclimate-test-reporter", group: :test, require: nil
 
-
+gem 'devise'
 gem 'spree', github: 'spree/spree', branch: '3-0-stable'
 #gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => 'master'
-gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '3-0-stable'
 #gem 'spree_print_invoice', github: 'spree-contrib/spree_print_invoice', branch: '3-0-stable'
 #gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch: 'master'
 #gem 'spree_related_products', github: 'spree-contrib/spree_related_products', branch: 'master'

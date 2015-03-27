@@ -59,18 +59,6 @@ GIT
     spree_sample (3.0.0.rc4)
       spree_core (= 3.0.0.rc4)
 
-GIT
-  remote: https://github.com/spree/spree_auth_devise.git
-  revision: 07f16255c8e83cf5763f2c3510444ee1b4cdc4dd
-  branch: 3-0-stable
-  specs:
-    spree_auth_devise (3.0.0)
-      devise (~> 3.4.1)
-      devise-encryptable (= 0.1.2)
-      json
-      multi_json
-      spree_core (~> 3.0.0.beta)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -195,8 +183,6 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-    devise-encryptable (0.1.2)
-      devise (>= 2.1.0)
     diff-lcs (1.2.5)
     docile (1.1.5)
     dotenv (1.0.2)
@@ -848,6 +834,7 @@ DEPENDENCIES
   codeclimate-test-reporter
   coffee-rails (~> 4.0.0)
   database_cleaner
+  devise
   dotenv
   factory_girl_rails
   foreman
@@ -868,7 +855,6 @@ DEPENDENCIES
   selenium-webdriver
   shoulda-matchers
   spree!
-  spree_auth_devise!
   spring
   spring-commands-rspec
   therubyracer
