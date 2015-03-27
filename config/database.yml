@@ -14,3 +14,13 @@ development:
 test:
   <<: *default
   database: galapagos_test
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: <%= ENV['POSTGRESQL_DATABASE']  %>
+  username: <%= ENV['POSTGRESQL_USERNAME']  %>
+  password: <%= ENV['POSTGRESQL_PASSWORD']  %>
+  host: <%= ENV['POSTGRESQL_ADDRESS'] %>
+  pool: 20
+  port: 5432
