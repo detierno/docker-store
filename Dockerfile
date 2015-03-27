@@ -6,4 +6,4 @@ ADD Gemfile /galapagos_store/Gemfile
 ADD Gemfile.lock /galapagos_store/Gemfile.lock
 RUN bundle install
 ADD . /galapagos_store
-CMD ["bundle", "exec", "rails", "server"]
+CMD ["bundle", "exec", "rails", "server", "-p", "3001"]
